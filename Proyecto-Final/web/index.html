@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Torneo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <h1>Equipos de voleibol</h1>
+        
+        <form action="Controlador" method="POST" onsubmit="return validar()">
+         
+            <label for="teamName">Team Name:</label><br>
+            <input type="text" id="teamName" name="teamName" placeholder="Ingrese texto aquí" autocomplete="off"><br><br>
+            
+            <label for="jugadores">Numero de jugadores:</label><br>
+            <input type="text" id="jugadores" name="jugadores" placeholder="Min:6, Max:12" autocomplete="off"><br><br>
+            
+            <label for="categoria">Categoria</label><br>
+            <input type="text" id="categoria" name="categoria" placeholder="(infantil, juvenil o mayores)" autocomplete="off"><br><br>
+            
+            <label for="aficionados">Numero de aficionados:</label><br>
+            <input type="text" id="aficionados" name="aficionados" placeholder="Ingrese valor aqui:" autocomplete="off"><br><br>
+            
+            <label for="patrocinador">Patrocinador</label><br>
+            <select id="patrocinador" name="patrocinador">
+              <option disabled selected value="--">--</option>
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select><br><br>
+            <button name="btnE" type="submit">Agregar equipo</button>
+                
+        </form>
+        
+        <script>
+                function validar() {
+                var teamName = document.getElementById("teamName").value;
+                var jugadores = document.getElementById("jugadores").value;
+                var categoria = document.getElementById("categoria").value;
+                var aficionados = document.getElementById("aficionados").value;
+                var patrocinador = document.getElementById("patrocinador").value;
+                
+                if (teamName.length === null || jugadores.length === null || categoria.length === null || aficionados.length === null || patrocinador === "--"){
+                    alert('Falta llenar espacios');
+                    return false;
+                }
+                return true;
+            }
+     
+        </script>
+    </body>
+</html>

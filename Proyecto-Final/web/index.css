@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22/05/2023, 9:16:41 p. m.
+    Author     : juanc
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.todamateria.com%2Fvoleibol%2F&psig=AOvVaw0R6ikavMpHt4hK8MijNvHc&ust=1684972220619000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCND-1-fQjP8CFQAAAAAdAAAAABAJ');
+  background-size: cover;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
